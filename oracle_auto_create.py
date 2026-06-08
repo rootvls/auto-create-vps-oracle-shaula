@@ -3,7 +3,7 @@
 Oracle Auto-Create Adapted — relentless instance creation loop
 for OCI Always Free Ampere A1 with Telegram notifications.
 
-Inspired by: https://github.com/Mr0xred/oracle-auto-create
+
 """
 
 import json
