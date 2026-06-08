@@ -1,8 +1,7 @@
 # Oracle Auto Create Shaula
 
-Adaptasi worker Oracle Cloud auto-create buat ngejar slot **Always Free Ampere A1** di OCI, dengan retry loop agresif, backoff yang lebih waras saat kena rate limit, dan notifikasi Telegram.
+Oracle Cloud auto-create buat ngejar slot **Always Free Ampere A1** di OCI, dengan retry loop agresif, backoff yang lebih waras saat kena rate limit, dan notifikasi Telegram.
 
-Repo ini diambil dari kebutuhan real di VPS, terinspirasi dari `Mr0xred/oracle-auto-create`, tapi dirapihin buat workflow operasional yang lebih proper.
 
 ## Fitur
 - Retry create instance terus sampai tembus
@@ -114,8 +113,5 @@ journalctl --user -u oracle-auto-create-adapted.service -f
 - jangan commit private key OCI
 - jangan simpan token GitHub di remote URL git
 
-## Asal-usul
-Terinspirasi dari:
-- https://github.com/Mr0xred/oracle-auto-create
 
 Tapi implementasi repo ini udah disesuaiin buat workflow VPS + Telegram notify + retry tuning untuk OCI.
