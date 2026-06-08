@@ -1,0 +1,14 @@
+[Unit]
+Description=Oracle Auto Create Adapted
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/ubuntu/oracle-auto-create-adapted
+ExecStart=/home/ubuntu/.hermes/hermes-agent/venv/bin/python /home/ubuntu/oracle-auto-create-adapted/oracle_auto_create.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=default.target
